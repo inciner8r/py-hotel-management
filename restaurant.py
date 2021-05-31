@@ -29,7 +29,7 @@ text_Input = StringVar()
 operator = ""
 
 txtdisplay = Entry(f2, font=('ariel', 20, 'bold'), textvariable=text_Input,
-                   bd=5, insertwidth=7, bg="white", justify='right')
+                   bd=5, insertwidth=7, bg="white", justify='right', fg="black")
 txtdisplay.grid(columnspan=4)
 
 
@@ -177,9 +177,6 @@ Decimal.grid(row=5, column=2)
 Division = Button(f2, padx=16, pady=16, bd=4, fg="black", font=(
     'ariel', 20, 'bold'), text="/", bg="powder blue", command=lambda: btnclick("/"))
 Division.grid(row=5, column=3)
-status = Label(f2, font=('aria', 15, 'bold'), width=16,
-               text="-By Amar Kumar", bd=2, relief=SUNKEN)
-status.grid(row=7, columnspan=3)
 
 # ---------------------------------------------------------------------------------------
 rand = StringVar()
@@ -200,21 +197,21 @@ lblreference = Label(f1, font=('aria', 16, 'bold'),
                      text="Order No.", fg="steel blue", bd=10, anchor='w')
 lblreference.grid(row=0, column=0)
 txtreference = Entry(f1, font=('ariel', 16, 'bold'), textvariable=rand,
-                     bd=6, insertwidth=4, bg="powder blue", justify='right')
+                     bd=6, insertwidth=4, bg="powder blue", justify='right', fg="black")
 txtreference.grid(row=0, column=1)
 
 lblfries = Label(f1, font=('aria', 16, 'bold'),
                  text="Fries Meal", fg="steel blue", bd=10, anchor='w')
 lblfries.grid(row=1, column=0)
 txtfries = Entry(f1, font=('ariel', 16, 'bold'), textvariable=Fries,
-                 bd=6, insertwidth=4, bg="powder blue", justify='right')
+                 bd=6, insertwidth=4, bg="powder blue", justify='right', fg="black")
 txtfries.grid(row=1, column=1)
 
 lblLargefries = Label(f1, font=('aria', 16, 'bold'),
                       text="Lunch Meal", fg="steel blue", bd=10, anchor='w')
 lblLargefries.grid(row=2, column=0)
 txtLargefries = Entry(f1, font=('ariel', 16, 'bold'), textvariable=Largefries,
-                      bd=6, insertwidth=4, bg="powder blue", justify='right')
+                      bd=6, insertwidth=4, bg="powder blue", justify='right', fg="black")
 txtLargefries.grid(row=2, column=1)
 
 
@@ -222,21 +219,21 @@ lblburger = Label(f1, font=('aria', 16, 'bold'),
                   text="Burger Meal", fg="steel blue", bd=10, anchor='w')
 lblburger.grid(row=3, column=0)
 txtburger = Entry(f1, font=('ariel', 16, 'bold'), textvariable=Burger,
-                  bd=6, insertwidth=4, bg="powder blue", justify='right')
+                  bd=6, insertwidth=4, bg="powder blue", justify='right', fg="black")
 txtburger.grid(row=3, column=1)
 
 lblFilet = Label(f1, font=('aria', 16, 'bold'),
                  text="Pizza Meal", fg="steel blue", bd=10, anchor='w')
 lblFilet.grid(row=4, column=0)
 txtFilet = Entry(f1, font=('ariel', 16, 'bold'), textvariable=Filet,
-                 bd=6, insertwidth=4, bg="powder blue", justify='right')
+                 bd=6, insertwidth=4, bg="powder blue", justify='right', fg="black")
 txtFilet.grid(row=4, column=1)
 
 lblCheese_burger = Label(f1, font=('aria', 16, 'bold'),
                          text="Cheese burger", fg="steel blue", bd=10, anchor='w')
 lblCheese_burger.grid(row=5, column=0)
 txtCheese_burger = Entry(f1, font=('ariel', 16, 'bold'), textvariable=Cheese_burger,
-                         bd=6, insertwidth=4, bg="powder blue", justify='right')
+                         bd=6, insertwidth=4, bg="powder blue", justify='right', fg="black")
 txtCheese_burger.grid(row=5, column=1)
 
 # --------------------------------------------------------------------------------------
@@ -244,42 +241,42 @@ lblDrinks = Label(f1, font=('aria', 16, 'bold'), text="Drinks",
                   fg="steel blue", bd=10, anchor='w')
 lblDrinks.grid(row=0, column=2)
 txtDrinks = Entry(f1, font=('ariel', 16, 'bold'), textvariable=Drinks,
-                  bd=6, insertwidth=4, bg="powder blue", justify='right')
+                  bd=6, insertwidth=4, bg="powder blue", justify='right', fg="black")
 txtDrinks.grid(row=0, column=3)
 
 lblcost = Label(f1, font=('aria', 16, 'bold'), text="cost",
                 fg="steel blue", bd=10, anchor='w')
 lblcost.grid(row=1, column=2)
 txtcost = Entry(f1, font=('ariel', 16, 'bold'), textvariable=cost,
-                bd=6, insertwidth=4, bg="powder blue", justify='right')
+                bd=6, insertwidth=4, bg="powder blue", justify='right', fg="black")
 txtcost.grid(row=1, column=3)
 
 lblService_Charge = Label(f1, font=(
     'aria', 16, 'bold'), text="Service Charge", fg="steel blue", bd=10, anchor='w')
 lblService_Charge.grid(row=2, column=2)
 txtService_Charge = Entry(f1, font=('ariel', 16, 'bold'), textvariable=Service_Charge,
-                          bd=6, insertwidth=4, bg="powder blue", justify='right')
+                          bd=6, insertwidth=4, bg="powder blue", justify='right', fg="black")
 txtService_Charge.grid(row=2, column=3)
 
 lblTax = Label(f1, font=('aria', 16, 'bold'), text="Tax",
                fg="steel blue", bd=10, anchor='w')
 lblTax.grid(row=3, column=2)
 txtTax = Entry(f1, font=('ariel', 16, 'bold'), textvariable=Tax,
-               bd=6, insertwidth=4, bg="powder blue", justify='right')
+               bd=6, insertwidth=4, bg="powder blue", justify='right', fg="black")
 txtTax.grid(row=3, column=3)
 
 lblSubtotal = Label(f1, font=('aria', 16, 'bold'),
                     text="Subtotal", fg="steel blue", bd=10, anchor='w')
 lblSubtotal.grid(row=4, column=2)
 txtSubtotal = Entry(f1, font=('ariel', 16, 'bold'), textvariable=Subtotal,
-                    bd=6, insertwidth=4, bg="powder blue", justify='right')
+                    bd=6, insertwidth=4, bg="powder blue", justify='right', fg="black")
 txtSubtotal.grid(row=4, column=3)
 
 lblTotal = Label(f1, font=('aria', 16, 'bold'), text="Total",
                  fg="steel blue", bd=10, anchor='w')
 lblTotal.grid(row=5, column=2)
 txtTotal = Entry(f1, font=('ariel', 16, 'bold'), textvariable=Total,
-                 bd=6, insertwidth=4, bg="powder blue", justify='right')
+                 bd=6, insertwidth=4, bg="powder blue", justify='right', fg="black")
 txtTotal.grid(row=5, column=3)
 
 # -----------------------------------------buttons------------------------------------------
